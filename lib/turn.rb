@@ -1,5 +1,6 @@
 def turn
-
+  puts "Please enter 1-9:"
+  
 end
 
 def display_board(board)
@@ -25,7 +26,5 @@ def position_taken?(board, index)
 end
 
 def move(board, index, token = "X")
-  if valid_move?(board, index)
-    board[index] = token
-  end
+  board[index] = token
 end
